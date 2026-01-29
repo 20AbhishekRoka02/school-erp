@@ -4,10 +4,10 @@ services:
     container_name: placement_portal_db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root # N0t_Y0ur_R00T_Passwo1d
       MYSQL_DATABASE: school_erp
       MYSQL_USER: mysql
-      MYSQL_PASSWORD: mysql
+      MYSQL_PASSWORD: mysql # Regu1ar_Passw0rd
     volumes:
       - ./backend/db_volume:/var/lib/mysql
     ports:

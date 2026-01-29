@@ -218,3 +218,4 @@ __marimo__/
 
 # ignore db_volume
 db_volume/
+.backend.env
