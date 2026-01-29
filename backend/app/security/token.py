@@ -1,6 +1,7 @@
 # from jose import jwt, JWTError
 # from datetime import datetime, timedelta
 # Create the bare minimal JWT.
+# from PyJWT import jwt
 import jwt
 from cryptography.hazmat.primitives import serialization
 from datetime import datetime, timedelta

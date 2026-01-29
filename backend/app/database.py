@@ -11,5 +11,5 @@ DATABASE_URL=os.environ['DATABASE_URL']
 # sqlite_file_name = "schoolerp.db"
 # sqlite_url = f"sqlite:///./{sqlite_file_name}"
 
-engine = create_engine(DATABASE_URL, echo=True)
+engine = create_engine(DATABASE_URL, echo=True, pool_pre_ping=True, pool_recycle=300)
 # SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
